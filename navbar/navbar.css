@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primThemeColor: #333333;
+    --secThemeColor: #4ab7e2;
+    --textColor: #fff;
+    --fontPoppins: 'Poppins', 'Courier New', Courier, monospace;
+    --transition: .25s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar{
+    height: 12vh;
+    width: 100%;
+    padding: 0 2rem; 
+    background-color: var(--primThemeColor);
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.college-logo {
+    height: 10vh;
+    width: 12vh;
+    border-radius: 50%;
+    background-image: url('../img/kantipur.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+#nav-btn {
+    font-family: var(--fontPoppins);
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--textColor);
+    padding: 0.5rem 1rem;
+}
+
+.nav-btn:hover {
+    transition: var(--transition);
+    color: var(--secThemeColor);
+    cursor: pointer;
+}
+
+#applyNowBtn {
+    background-color: var(--secThemeColor);
+    color: var(--textColor);
+    padding: 1.5vh 6vh;
+    border: none;
+    font-family: var(--fontPoppins);
+    border-radius: 1.5vh;
+}
+
+#applyNowBtn:hover {
+    transform: scale(1.05, 1.05);
+    background-color: var(--textColor);
+    color: var(--secThemeColor);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.navbar-toggler {
+    height: 5vh;
+    width: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--textColor);
+}
+
+.navbar-toggler:hover {
+    transform: scale(1.35, 1.35);
+    transition: var(--transition);
+    cursor: pointer;
+}
+.navbar-toggler:hover~.collapse{
+    background-color: rgba(0,0,0,0.6);
+}
