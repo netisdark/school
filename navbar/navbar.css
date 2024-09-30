@@ -68,7 +68,7 @@ a {
     padding: 0.5rem 1rem;
 }
 
-.nav-btn:hover {
+#nav-btn:hover {
     transition: var(--transition);
     color: var(--secThemeColor);
     cursor: pointer;
