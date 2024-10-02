@@ -119,7 +119,7 @@ input:focus{
 .poster-container{
     height: 70vh;
     width: 40vw;
-    background-image: url('/media_src/poster_3.jpg');
+    background-image: url('../media_src/poster_3.jpg');
     background-size: 100% 100%;
     background-position: center;
     border-radius: 0vh 2vh 2vh 0vh;
