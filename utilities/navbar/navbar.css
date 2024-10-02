@@ -39,7 +39,7 @@ body{
     height: 10vh;
     width: 10vh;
     border-radius: 50%;
-    background-image: url('/media_src/college_logo.jfif');
+    background-image: url('../media_src/college_logo.jfif');
     background-position: center;
     background-size: 100% 100%;
 }
