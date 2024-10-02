@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- styleSheet -->
-    <link rel="stylesheet" href="homepage.css">
     <title>Kantipur Intl. College</title>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="admission.css">
     <!-- Poppins Font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,33 +16,48 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
  crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+ <!-- Favicon -->
+<link rel="shortcut icon" href="/media_src/college_logo.jfif" type="image/x-icon">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo-container nav-item">
+        <div class="nav-item-cont">
             <div class="college-logo"></div>
         </div>
 
-        <div class="nav-btns-container nav-item">
-            <a href="/about_page/about.html"><span id="nav-btn">About</span></a>
-            <a href="/courses_page/course.html"><span id="nav-btn">Courses</span></a>
-            <a href="/scholarship_page/scholarship.html"><span id="nav-btn">Scholarship</span></a>
-            <a href="/admission_page/admission.html"><span id="nav-btn">Admission</span></a>            
+        <div class="nav-item-cont">
+            <a href="/about_page/about.html"><div class="nav-btn" id="about">About</div></a>
+            <a href="/courses_page/course.html"><div class="nav-btn" id="courses">Courses</div></a>
+            <a href="/scholarship_page/scholarship.html"><div class="nav-btn" id="scholarship">Scholarship</div></a>
+            <a href="/admission_page/admission.html"><div class="nav-btn" id="admission">Admission</div></a>
         </div>
-
-        <div class="nav-utilities-container nav-item">
-            <button id="applyNowBtn">Apply Now</button>
-
-            <div class="nav-bars-cont">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+        <div class="nav-item-cont">
+            <button id="applyBtn">Apply Now</button>
+            <i class="fa-solid fa-bars"></i>
         </div>
-
     </nav>
     
+    <div class="sliding-nav">
+        <div class="cross-btn-cont">
+            <i class="fa-solid fa-x"></i>
+        </div>
+        <ul class="siliding-nav-item-list">
+            <a href="/contact_page/contact.html"><div class="sliding-nav-btn" id="contact">Contact Us</div></a>
+            <a href="/news_events_page/news.html"><div class="sliding-nav-btn" id="news">News & Events</div></a>
+            <a href="/life_page/life.html"><div class="sliding-nav-btn" id="news">Life at Kantipur Intl.</div></a>
+            <a href="/login_page/login.html"><div class="sliding-nav-btn">Login</div></a>
+            <a href="/scholarship_page/scholarship.html"><div class="sliding-nav-btn">Scholarship</div></a>
 
-    <script src="homepage.js"></script>
+            <div class="socials-cont">
+                <div class="icon-cont"><i class="fa-brands fa-instagram social-icon"></i></div>
+                <div class="icon-cont"><i class="fa-brands fa-facebook social-icon"></i></div>
+                <div class="icon-cont"><i class="fa-brands fa-whatsapp social-icon"></i></div>                
+            </div>
+        </ul>
+    </div>
+
+    <script src="admission.js"></script>
+    <script src="/utilities/navbar/navbar.js"></script>
 </body>
 </html>

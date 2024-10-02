@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kantipur Intl. College</title>
     <!-- Style Sheet -->
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="login.css">
     <!-- Poppins Font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,6 +47,7 @@
             <a href="/news_events_page/news.html"><div class="sliding-nav-btn" id="news">News & Events</div></a>
             <a href="/life_page/life.html"><div class="sliding-nav-btn" id="news">Life at Kantipur Intl.</div></a>
             <a href="/login_page/login.html"><div class="sliding-nav-btn">Login</div></a>
+            <a href="/scholarship_page/scholarship.html"><div class="sliding-nav-btn">Scholarship</div></a>
 
             <div class="socials-cont">
                 <div class="icon-cont"><i class="fa-brands fa-instagram social-icon"></i></div>
@@ -56,7 +57,67 @@
         </ul>
     </div>
 
-    <script src="homepage.js"></script>
+    <!-- Login Form -->
+    
+    <section class="wrapper">
+        <div class="container">
+            <div class="form-container login-slider">
+                <form action="">
+                    <div class="login-text">Login</div>
+    
+                    <div class="login-input-cont">
+                        <input type="text" name="" id="username" class="input-box" placeholder="Username">
+                        <input type="password" name="" id="password" class="input-box" placeholder="password">
+                    </div>
+    
+                    <div class="forgot-pw-cont">
+                        <a href=""><span class="forgot-text">Forgot Your Password ?</span></a>
+                    </div>
+    
+                    <div class="login-btn-cont">
+                        <button class="login-btn" id="loginBtn" type="submit">Login</button>
+                    </div>
+    
+                    <div class="signup-cont">
+                        <span class="text-left">Don't Have a Account?</span>
+                        <span class="text-right signup-link"> &nbsp;SignUp Now</span>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="signup-slider">
+                <form action="">
+                    <div class="signup-text">SignUp</div>
+    
+                    <div class="signup-input-cont">
+                        <input type="text" name="" id="userName-signup" class="signup-input-box" placeholder="Enter Your Username">
+                        <input type="email" name="" id="email-signup" class="signup-input-box" placeholder="Enter Your Email">
+                        <input type="password" name="" id="password-signup" class="user-input-box" placeholder="Enter Your Password">
+                    </div>
+    
+                    <div class="create-acc-cont">
+                        <button id="creteAccBtn" class="create-acc-btn" type="submit">Create Account</button>
+                    </div>
+    
+                    <div class="already-text-cont">
+                        Already Have a Account?<span class="login-link">Login Now</span>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="poster-container">
+                <div class="kantipur-text-cont">
+                    Kantipur Intl.
+                </div>
+                <div class="slogan-cont">
+                    Unleash Your Brilliance <br> at a Premier Institution.
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="login.js"></script>
     <script src="/utilities/navbar/navbar.js"></script>
 </body>
 </html>
